@@ -1,0 +1,26 @@
+.country-tabs{
+    display: flex;
+    width: 100%;
+    
+    span{
+        margin-left: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        color: $text-color-main;
+    }
+    .turk-tab{
+        padding: 12px 15px;
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid $base-color-faded;
+        cursor: pointer;
+    }
+    .usa-tab{
+        padding: 12px 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin-left: 8px;
+        border: 1px solid $base-color-faded;
+        cursor: pointer;
+    }
+}

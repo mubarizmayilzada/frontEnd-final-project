@@ -1,0 +1,82 @@
+.tariffs{
+    &__content{
+        padding: 48px 48px 88px;
+        margin: 0px 0px 88px;
+        background-color: $container-color;
+        border-radius: 8px;
+        &__titles{
+            display: flex;
+            margin: 0px 0px 72px;
+            
+            h2{
+                margin: 0px 0px 16px;
+                font-size: 40px;
+                font-weight: 700;
+                // line-height: 56px;
+                color: $base-color;
+            }
+            .country-tabs{
+                display: flex;
+                justify-content: flex-end;
+                height: 56px !important;
+            }
+        }
+    }
+
+    .tariff{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 114px;
+        padding: 21px 55px 21px 31px;
+        margin: 0px 0px 8px;
+        border: 1px solid $base-color-faded;
+        border-radius: 8px;
+        &:hover{
+            border: 1px solid $base-color;
+        }
+        &__icon-condition{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .icon{
+                width: 70px;
+                height: 70px;
+                padding: 17px;
+                background-color: $background-color;
+                border-radius: 8px;
+            }
+            h5{
+                font-size: 20px;
+                margin: 0px 14px 0px 32px;
+                font-weight: 600;
+                line-height: 28px;
+                color: $text-color-main;
+            }
+        }
+        &__price-type{
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            height: 48px;
+            .type{
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                color: $base-color;
+            }
+            .current{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                color: $text-color-main;
+            }
+            .current-old{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $text-color-faded;
+            }
+        }
+    }
+}

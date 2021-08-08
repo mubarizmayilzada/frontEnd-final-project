@@ -1,0 +1,95 @@
+.innovations{
+    background-color: $container-color;
+    background-image: url(https://velocity.az/front/img/vector/Vector-news.svg);
+    background-position: 0px 80px;
+    background-repeat: no-repeat;
+    margin-bottom: 88px;
+    padding: 64px;
+    border-radius: 8px;
+    .news-container{
+        display: flex;
+
+        .titles{
+            width: 320px;
+            .heading{
+                margin-bottom: 96px;
+            }
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 56px;
+                color: $base-color;
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                color: $text-color-faded;
+            }
+
+            .news-button{
+                background-color: transparent;
+                border: 1px solid $base-color-faded;
+                color: $base-color;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.219);
+                    border: 1px solid $base-color;
+                }
+            }
+        }
+
+        .news-cards{
+            width: 685px;
+            margin-left: 40px;
+            margin-left: 40px;
+            .news-card:hover{
+                .card-body{
+                    .v-card-title{
+                        transition: color ease-in-out 0.5s;
+                        color: $base-color;
+                    }
+                }
+            }
+            .news-card{
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child){
+                    margin-bottom: 32px;
+                }
+                .card-body{
+                    padding: 24px 0px;
+                    margin: 0px 0px 0px 32px;
+                    
+                    a{
+                        text-decoration: none;
+                        margin: 0px;
+                    }
+                    h5{
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        color: $text-color-main;
+                        margin: 0px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        color: $text-color-faded;
+                        margin: 0px;
+                    }
+                    .v-card-button{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: $base-color;
+                        margin: 0px;
+                    }
+                }
+            }
+
+        }
+    }
+}

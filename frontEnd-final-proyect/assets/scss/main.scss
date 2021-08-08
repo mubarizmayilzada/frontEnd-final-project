@@ -1,0 +1,24 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+// @import 'base/icon-fonts';
+@import 'base/font';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/sliderSection';
+@import 'layout/calculatorSection';
+@import 'layout/informationSection';
+@import 'layout/tariffsSection';
+@import 'layout/storesSection';
+@import 'layout/innovationSection';
+@import 'layout/footer';
+
+
+@import 'components/buttons';
+@import 'components/typewritter';
+@import 'components/countryTabs';
+
+@import 'pages/home';
