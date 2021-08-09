@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qadağan mallar</title>
+    <link rel="icon" type="image/png" href="https://velocity.az/front/img/favicon/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- CSS only bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- flickty slider css -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- flickty slider js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+<body>
+    <div class="m-b">
+        <header class="header">
+            <div class="header__common-div">
+                <div class="custom-container header__common-div__wrapper">
+                    <div class="header__common-div__left-side">
+                        <ul>
+                            <li>
+                                <a href="#">Daşınmasına icazə yoxdur</a>
+                            </li>
+                            <li>
+                                <a href="#">Tez-tez verilən suallar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__common-div__right-side">
+                        <ul>
+                        <li>
+                            <div class="wrapper-current">
+                                <span class="current-1">
+                                    1 USD - 1.70 AZN
+                                </span>
+                                <span class="current-2">
+                                    1 TRY - 0.20 AZN
+                                </span>
+                                <span class="current-0">
+                                    1 USD - 1.70 AZN
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="tel:+994123108707"><i class="fa fa-phone-alt"></i>+994123108707</a>
+                        </li>
+                        <li>
+                            <span class="change-language-aze" id="language-aze">
+                                AZE    
+                            </span> 
+                            <i class="far fa-angle-down drop-icon"></i>
+                        </li>
+                        <li>
+                            <a href="#"><div class="button-custom-sm">Qeydiyyat</div></a>
+                        </li>
+                    </ul>
+                    <div class="languages-wrapper d-none">
+                        <span class="change-language-eng" id="language-eng">
+                            ENG    
+                        </span> 
+                        <span class="change-language-rus" id="language-rus">
+                            RUS    
+                        </span> 
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="custom-container">
+                <div class="header__nav-div">
+                    <div class="header__nav-div__left">
+                        <div class="header__nav-div__left__velocity-icon">
+                            <a href="file:///D:/frontEnd-final-project/frontEnd-final-proyect/html/main-page.html"><img src="https://velocity.az/front/img/logo/logo.svg"  alt="velocity.az"></a>
+                        </div>
+                        <div class="header__nav-div__left__navbar">
+                                <ul>
+                                <li>
+                                    <a href="#">Haqqımızda</a>
+                                </li>
+                                <li>
+                                    <a href="">tariflər</a>
+                                </li>
+                                <li>
+                                    <a href="">xidmətlər</a>
+                                </li>
+                                <li>
+                                    <a href="">mağazalar</a>
+                                </li>
+                                <li>
+                                    <a href="">yeniliklər</a>
+                                </li>
+                                <li>
+                                    <a href="">əlaqə</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__nav-div__right">
+                        <ul>
+                          <li>
+                            <a href=""><i class="far fa-user user-icon"></i><span class="my-account">Hesabım</span></a>
+                          </li>
+                          <li><a href=""><i class="far fa-shopping-cart"></i><span class="header__nav-div__right__shop-count">0</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </div>
+
+
+        <section class="registration custom-container">
+            <div class="registration-content">
+                <div class="registration-heading">
+                    <h2>Qeydiyyatdan keç</h2>
+                    <p>Əgər hesabınız yoxdursa aşağıdakı məlumatları dolduraraq yeni hesab yaradın</p>
+                </div>
+                <div class="tab-register">
+                    <div class="tab-1">
+                        <span>Fiziki şəxs</span>
+                    </div>
+                    <div class="tab-2">
+                        <span>Hüquqi şəxs</span>
+                    </div>
+                </div>
+                <div class="registration-form">
+                    <div class="form-left">
+                        <div class="input-name">
+                            <input type="text" id="name">
+                            <label class="label" for="name">Ad</label>
+                            <span class="name-warning">Ad boş qoyula bilməz.</span>
+                        </div>
+                        <div class="input-mail">
+                            <input type="email" id="mail">
+                            <label for="mail">Email</label>
+                            <span class="mail-warning">Email boş qoyula bilməz.</span>
+                        </div>
+                        <div class="input-password">
+                            <input type="password" id="password">
+                            <label for="password">Şifrə</label>
+                            <span class="password-warning">Şifrə boş qoyula bilməz.</span>
+                        </div>
+                    </div>
+                    <div class="form-right">
+                        <div class="input-surname">
+                            <input type="text" id="surname">
+                            <label for="surname">Soyad</label>
+                            <span class="surname-warning">Soyad boş qoyula bilməz.</span>
+                        </div>
+                        <div class="input-tel">
+                            <input type="tel" id="tel">
+                            <label for="tel">Mobil nömrə</label>
+                            <span class="tel-warning">Mobil nömrə boş qoyula bilməz.</span>
+                        </div>
+                        <div class="input-password-try">
+                            <input type="password" id="password-try">
+                            <label for="password-try">Təkrar şifrə</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-change">
+
+            </div>
+        </section>
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

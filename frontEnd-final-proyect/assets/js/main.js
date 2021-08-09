@@ -12,3 +12,25 @@ languageChangerIcon.addEventListener('click', function (e){
     languageChanger.classList.toggle('background-for-language-tab');
     languageDropDown.classList.toggle('d-none');
 });
+
+
+//faq section
+
+const accordions = document.querySelectorAll('.faq-accordion-heading');
+const accordionsDescription = document.querySelectorAll('.faq-accordion-description');
+let accordionClickedTab = '';
+let accordionClickedTabDescription = '';
+accordions.forEach((tab) => {
+
+    tab.addEventListener('click',(e) => {
+        e.preventDefault();
+        accordionClickedTab = tab.getAttribute("data-according");
+        accordionsDescription.forEach((item) => {
+            accordionClickedTabDescription = item.getAttribute("data-according-num");
+                item.classList.add('height-0'); 
+                if (accordionClickedTab === accordionClickedTabDescription) {
+                            item.classList.remove('height-0');
+            }
+        })
+    })
+})

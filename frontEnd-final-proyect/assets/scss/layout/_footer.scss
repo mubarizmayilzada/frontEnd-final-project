@@ -55,6 +55,48 @@ footer{
                 }
         }
 
+        .footer-bottom{
+            padding: 40px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid $text-color-2x-faded ;
+            .logo-copyright{
+                .copyright{
+                    margin: 0px;
+                    margin-top: 8px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: $text-color-faded;
+                }
+            }
+
+            .sosial-media-icons{
+                a{
+                    margin: 0px 40px 0px 0px;
+                    text-decoration: none;
+                    color: $text-color-main;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    i{
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        transition: all ease-in-out 0.5s;
+                        color: $base-color;
+                        box-shadow: 0 0 0 3px rgba(198, 194, 249, 0.2),
+                        0 0 0 6px rgba(198, 194, 249, 0.4),
+                        0 0 0 9px rgba(198, 194, 249, 0.2),
+                        0 0 0 12px rgba(198, 194, 249, 0.2),
+                        0 0 0 15px rgba(198, 194, 249, 0.2),
+                        0 0 0 18px rgba(198, 194, 249, 0.2);
+                    }
+                    
+                }
+            }
+        }
     }
 
 }

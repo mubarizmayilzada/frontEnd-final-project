@@ -1,0 +1,152 @@
+.registration{
+    background-color: $container-color;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 88px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.registration-content{
+    width: 794px;
+    padding: 24px 48px 40px 24px;
+
+    .tab-register{
+        width: 312px;
+        height: 58px;
+        border-radius: 8px;
+        border: 1px solid $text-color-2x-faded;
+        display: flex;
+        margin: 0px 204px 56px;
+        text-align: center;
+        span{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+        .tab-1{
+            width: 156px;
+            height: 56px;
+            padding: 15px 30px;
+            color: $base-color;
+            background-color: $background-color;
+            border-radius: 8px;
+        }
+        .tab-2{
+            width: 156px;
+            height: 56px;
+            padding: 15px 30px;
+            color: $text-color-main;
+        }
+    }
+}
+.registration-heading{
+    text-align: center;
+    margin-bottom: 48px;
+
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 56px;
+        color: $base-color;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $text-color-faded;
+    }
+    
+    
+}
+
+.registration-form{
+    display: flex;
+    span{
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 5px 0px 0px 16px;
+    }
+    input{
+        padding: 16px;
+        height: 56px;
+        width: 349px;
+        border-radius: 8px;
+        background-color: $background-color;
+        border: none;
+        color: $text-color-main;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .input-name{
+        position: relative;
+        label{
+            color: $text-color-faded;
+            position: absolute;
+            left: 30px;
+            top: 16px;
+        }
+    }
+    .input-mail{
+        position: relative;
+        label{
+            color: $text-color-faded;
+            position: absolute;
+            left: 30px;
+            top: 16px;
+        }
+    }
+    .input-password{
+        position: relative;
+        label{
+            color: $text-color-faded;
+            position: absolute;
+            left: 30px;
+            top: 16px;
+        }
+    }
+    .input-surname{
+        position: relative;
+        label{
+            color: $text-color-faded;
+            position: absolute;
+            left: 30px;
+            top: 16px;
+        }
+    }
+    .input-tel{
+        position: relative;
+        label{
+            color: $text-color-faded;
+            position: absolute;
+            left: 30px;
+            top: 16px;
+        }
+    }
+    .input-password-try{
+        position: relative;
+        label{
+            color: $text-color-faded;
+            position: absolute;
+            left: 30px;
+            top: 16px;
+        }
+    }
+ 
+
+    .form-left{
+        div{
+            padding: 0px 12px 32px;
+        }
+    }
+    .form-right{
+        div{
+            padding: 0px 12px 32px;
+        }
+    }
+    
+}

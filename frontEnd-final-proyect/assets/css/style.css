@@ -41,7 +41,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box !important; }
 
 .custom-container {
   width: 1170px;
@@ -51,10 +51,10 @@ li {
   list-style: none; }
 
 body {
-  background-color: #292836; }
+  background-color: #292836 !important; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .header {
   background-color: #292836; }
@@ -755,6 +755,274 @@ footer {
           font-size: 16px; }
           footer .footer-section .footer-nav li a:hover {
             color: #c7c2f9; }
+    footer .footer-section .footer-bottom {
+      padding: 40px 0px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(78, 78, 78, 0.726); }
+      footer .footer-section .footer-bottom .logo-copyright .copyright {
+        margin: 0px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: rgba(247, 246, 238, 0.637); }
+      footer .footer-section .footer-bottom .sosial-media-icons a {
+        margin: 0px 40px 0px 0px;
+        text-decoration: none;
+        color: #F7F6EE;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px; }
+        footer .footer-section .footer-bottom .sosial-media-icons a i {
+          font-size: 20px; }
+        footer .footer-section .footer-bottom .sosial-media-icons a:hover {
+          transition: all ease-in-out 0.5s;
+          color: #c7c2f9;
+          box-shadow: 0 0 0 3px rgba(198, 194, 249, 0.2), 0 0 0 6px rgba(198, 194, 249, 0.4), 0 0 0 9px rgba(198, 194, 249, 0.2), 0 0 0 12px rgba(198, 194, 249, 0.2), 0 0 0 15px rgba(198, 194, 249, 0.2), 0 0 0 18px rgba(198, 194, 249, 0.2); }
+
+.m-b {
+  margin: 0px 0px 72px; }
+
+.prohibitions__heading {
+  margin: 0px 0px 76px;
+  text-align: center; }
+  .prohibitions__heading .title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #c7c2f9; }
+  .prohibitions__heading .title-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 12px;
+    color: rgba(247, 246, 238, 0.637); }
+  .prohibitions__heading .title-description-line {
+    width: 87px;
+    height: 4px;
+    background-color: #c7c2f9;
+    margin: 0px auto; }
+
+.prohibitions__container {
+  width: 960px;
+  height: 992px;
+  background-color: #323d44;
+  border-radius: 8px;
+  margin: 0px auto;
+  margin-bottom: 88px;
+  padding: 47px 48px 49px;
+  background-image: url(https://velocity.az/front/img/vector/Vector-about.svg);
+  background-position: 123px 162px;
+  background-repeat: no-repeat; }
+  .prohibitions__container ul {
+    margin: 0px;
+    padding: 0px; }
+  .prohibitions__container li {
+    list-style: disc;
+    color: rgba(247, 246, 238, 0.637); }
+  .prohibitions__container p {
+    line-height: 32px;
+    margin: 0px;
+    color: rgba(247, 246, 238, 0.637);
+    font-size: 18px;
+    font-weight: 400; }
+
+.section__heading {
+  margin: 0px 0px 76px;
+  text-align: center; }
+  .section__heading .title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #c7c2f9; }
+  .section__heading .title-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 12px;
+    color: rgba(247, 246, 238, 0.637); }
+  .section__heading .title-description-line {
+    width: 87px;
+    height: 4px;
+    background-color: #c7c2f9;
+    margin: 0px auto; }
+
+.section__container {
+  width: 960px;
+  margin: 0 auto;
+  transition: all ease 0.5s; }
+  .section__container .accordion-item {
+    background-color: #292836;
+    margin-bottom: 8px;
+    border: none;
+    transition: all ease 0.5s; }
+    .section__container .accordion-item:last-child {
+      margin-bottom: 88px; }
+    .section__container .accordion-item .height-0 {
+      transition: all ease 0.5s;
+      height: 0px !important;
+      display: none; }
+    .section__container .accordion-item li {
+      list-style: square;
+      color: rgba(247, 246, 238, 0.637); }
+  .section__container .faq-accordion-heading {
+    width: 960px;
+    height: 65px;
+    background-color: #323d44;
+    padding: 20px 24px;
+    color: #F7F6EE;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all ease 0.5s; }
+    .section__container .faq-accordion-heading h6 {
+      margin: 0px; }
+    .section__container .faq-accordion-heading i {
+      font-size: 14px; }
+  .section__container .faq-accordion-description {
+    padding: 20px 24px 58px;
+    margin: 8px 0px 0px;
+    background-color: #323d44;
+    border: 1px solid #c7c2f9;
+    border-radius: 8px;
+    transition: all ease 0.5s; }
+    .section__container .faq-accordion-description__heading {
+      display: flex;
+      justify-content: space-between;
+      color: #F7F6EE; }
+      .section__container .faq-accordion-description__heading h6 {
+        font-size: 18px;
+        margin: 0px 0px 44px;
+        font-weight: 500;
+        line-height: 32px;
+        color: #c7c2f9; }
+      .section__container .faq-accordion-description__heading i {
+        font-size: 14px; }
+    .section__container .faq-accordion-description p {
+      margin: 0px;
+      padding: 0px;
+      line-height: 26px;
+      color: rgba(247, 246, 238, 0.637); }
+
+.registration {
+  background-color: #323d44;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 88px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.registration-content {
+  width: 794px;
+  padding: 24px 48px 40px 24px; }
+  .registration-content .tab-register {
+    width: 312px;
+    height: 58px;
+    border-radius: 8px;
+    border: 1px solid rgba(78, 78, 78, 0.726);
+    display: flex;
+    margin: 0px 204px 56px;
+    text-align: center; }
+    .registration-content .tab-register span {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px; }
+    .registration-content .tab-register .tab-1 {
+      width: 156px;
+      height: 56px;
+      padding: 15px 30px;
+      color: #c7c2f9;
+      background-color: #292836;
+      border-radius: 8px; }
+    .registration-content .tab-register .tab-2 {
+      width: 156px;
+      height: 56px;
+      padding: 15px 30px;
+      color: #F7F6EE; }
+
+.registration-heading {
+  text-align: center;
+  margin-bottom: 48px; }
+  .registration-heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #c7c2f9; }
+  .registration-heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(247, 246, 238, 0.637); }
+
+.registration-form {
+  display: flex; }
+  .registration-form span {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 5px 0px 0px 16px; }
+  .registration-form input {
+    padding: 16px;
+    height: 56px;
+    width: 349px;
+    border-radius: 8px;
+    background-color: #292836;
+    border: none;
+    color: #F7F6EE; }
+    .registration-form input:focus {
+      outline: none; }
+  .registration-form .input-name {
+    position: relative; }
+    .registration-form .input-name label {
+      color: rgba(247, 246, 238, 0.637);
+      position: absolute;
+      left: 30px;
+      top: 16px; }
+  .registration-form .input-mail {
+    position: relative; }
+    .registration-form .input-mail label {
+      color: rgba(247, 246, 238, 0.637);
+      position: absolute;
+      left: 30px;
+      top: 16px; }
+  .registration-form .input-password {
+    position: relative; }
+    .registration-form .input-password label {
+      color: rgba(247, 246, 238, 0.637);
+      position: absolute;
+      left: 30px;
+      top: 16px; }
+  .registration-form .input-surname {
+    position: relative; }
+    .registration-form .input-surname label {
+      color: rgba(247, 246, 238, 0.637);
+      position: absolute;
+      left: 30px;
+      top: 16px; }
+  .registration-form .input-tel {
+    position: relative; }
+    .registration-form .input-tel label {
+      color: rgba(247, 246, 238, 0.637);
+      position: absolute;
+      left: 30px;
+      top: 16px; }
+  .registration-form .input-password-try {
+    position: relative; }
+    .registration-form .input-password-try label {
+      color: rgba(247, 246, 238, 0.637);
+      position: absolute;
+      left: 30px;
+      top: 16px; }
+  .registration-form .form-left div {
+    padding: 0px 12px 32px; }
+  .registration-form .form-right div {
+    padding: 0px 12px 32px; }
 
 .button-custom-sm {
   display: inline-block;

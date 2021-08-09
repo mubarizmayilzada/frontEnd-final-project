@@ -1,7 +1,7 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box !important;
 }
 .custom-container{
     width: 1170px;
@@ -12,8 +12,8 @@ li{
 }
 
 body{
-    background-color: $background-color;
+    background-color: $background-color !important;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
