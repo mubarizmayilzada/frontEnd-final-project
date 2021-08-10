@@ -5,6 +5,7 @@
     margin-bottom: 88px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 .registration-content{
     width: 794px;
@@ -68,20 +69,26 @@
         font-weight: 500;
         line-height: 16px;
         margin: 5px 0px 0px 16px;
+        color: #FFB47D;
+        display: none;
     }
     input{
         padding: 16px;
+        padding-bottom: 8px;
         height: 56px;
         width: 349px;
         border-radius: 8px;
         background-color: $background-color;
         border: none;
         color: $text-color-main;
-        &:focus{
-            outline: none;
-        }
     }
-
+    input:focus+label{
+        transition: all ease 0.5s;
+        outline: none;
+        top: 0;
+        font-size: 13px;
+    }
+    
     .input-name{
         position: relative;
         label{
@@ -149,4 +156,102 @@
         }
     }
     
+}
+.check-box{
+    display: inline-block;
+    & > span{
+        color: #FFB47D;
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 5px 0px 0px 30px;
+        opacity: 0;
+    }
+    label{
+        color: $text-color-main  ;
+        font-size: 16px;
+        font-weight: 400;
+        span{
+            color: $base-color ;
+        }
+    }
+    input{
+        width: 24px;
+        height: 24px;
+        margin: 0px 8px 0px 15px;
+        border: 2px solid $base-color-faded;
+        border-radius: 4px;
+        background-color: transparent;
+        color: $text-color-main
+    }
+    input:checked{
+        background-color: $base-color;
+        color: #181C1F;
+        background-image: url(https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_check-512.png);
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+    input:focus{
+        box-shadow: none;
+    }
+}
+.video-player{
+    display: inline-block;
+    position: relative;
+    left: 115px;
+    bottom: 23px;
+    a{
+        font-size: 16px;
+        color: $text-color-faded;
+        i{
+            color: $background-color-dark;
+            font-size: 20px;
+        }
+        &:hover{
+            transition: color ease 0.5s;
+            color: $base-color;
+        }
+    }
+}
+
+.register-button{
+    margin: 40px auto;
+    text-align: center;
+    padding: 16px 32px;
+    button{
+        width: 449px;
+        height: 56px;
+        padding: 16px 32px;
+        background: $base-color;
+        border-radius: 8px;
+        border: none;
+        &:hover{
+            transition: all ease 0.5s;
+            background: $base-color-faded;
+        }
+    }
+}
+
+.login-way{
+    width: 328px;
+    height: 834px;
+    padding: 0px 48px;
+    background: $base-color;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background-image: url(https://velocity.az/front/img/vector/Vector-lighten.svg);
+    background-repeat: no-repeat;
+    .button-custom-md{
+        border: 2px solid black;
+        width: 232px;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 56px;
+        margin-bottom: 24px;
+    }
 }

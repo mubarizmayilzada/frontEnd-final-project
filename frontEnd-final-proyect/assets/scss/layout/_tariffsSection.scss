@@ -4,6 +4,10 @@
         margin: 0px 0px 88px;
         background-color: $container-color;
         border-radius: 8px;
+
+        .tariff{
+            background-color: $container-color;
+        }
         &__titles{
             display: flex;
             margin: 0px 0px 72px;
@@ -57,6 +61,7 @@
         &__price-type{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             width: 350px;
             height: 48px;
             .type{

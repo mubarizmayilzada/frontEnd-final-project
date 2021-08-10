@@ -21,7 +21,7 @@
     <!-- flickty slider js -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
-<body style="background-color: #292836;">
+<body>
     <header class="header">
         <div class="header__common-div">
             <div class="custom-container header__common-div__wrapper">
@@ -31,7 +31,7 @@
                             <a href="file:///D:/frontEnd-final-project/frontEnd-final-proyect/html/prohibitions-page.html">Daşınmasına icazə yoxdur</a>
                         </li>
                         <li>
-                            <a href="#">Tez-tez verilən suallar</a>
+                            <a href="./faq.html">Tez-tez verilən suallar</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@
                         <i class="far fa-angle-down drop-icon"></i>
                     </li>
                     <li>
-                        <a href="#"><div class="button-custom-sm">Qeydiyyat</div></a>
+                        <a href="./registration.html"><div class="button-custom-sm">Qeydiyyat</div></a>
                     </li>
                 </ul>
                 <div class="languages-wrapper d-none">
@@ -121,8 +121,9 @@
 <section class="main-section-slider"> 
     <div class="custom-container">
         <div class="main-section-slider__slider-background">
-            <img src="https://velocity.az/front/img/vector/Vector-slider.svg" alt="">
-
+        
+        <div class="wrapper-slider">           
+            
             <div class="main-section-slider__slider-background__slider-container carousel-cell">
                 <div class="main-slider-left">
                     <h1>
@@ -138,7 +139,7 @@
                 </div>
             </div>
 
-            <!-- <div class="main-section-slider__slider-background__slider-container carousel-cell">
+            <div class="main-section-slider__slider-background__slider-container carousel-cell">
                 <div class="main-slider-left">
                     <h1>
                         Türkiyədən Azərbaycana çatdırılma
@@ -181,15 +182,9 @@
                 <div class="main-slider-right">
                     <img src="../images/kargo.png" alt="">
                 </div>
-            </div> -->
-
+            </div>
         </div>
-             <div class="slider-owl-dots">
-                 <div class="owl-dot"><span></span></div>
-                 <div class="owl-dot"><span></span></div>
-                 <div class="owl-dot"><span></span></div>
-                 <div class="owl-dot"><span></span></div>
-             </div>
+    </div>
     </div>
 </section>
 
@@ -597,7 +592,58 @@
         <div class="title"><h2>Mağazalar</h2></div>
         <div class="store-button button-custom-md">Hamısına bax</div>
     </div>
-
+    <div class="carousel--none" data-flickity='{ "wrapAround": true, "prevNextButtons": false, "groupCells": 1, "pageDots": false}'>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-1.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-2.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-3.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-4.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-5.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-6.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-7.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-8.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-9.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+        <div class="carousel__cell carousel__cell--store">
+            <a href="" class="carousel__store-link" >
+                <img src="https://velocity.az/frontend/web/uploads//images/store/store-10.png" alt="" class="carousel__store-img">
+            </a>
+        </div>
+    </div>
 </section>
 
 
@@ -714,6 +760,38 @@
         </div>
     </section>
 </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+$('.wrapper-slider').flickity({
+    cellAlign: 'left',
+    fullscreen:true,
+    lazyload:1,
+     prevNextButtons: false,
+     autoPlay: 1500
+   });
+</script>
+<script>
+    $( function() {
+  
+  var $mainslider = $('.gallery').flickity({
+    pageDots: true
+  });
+
+  var flickity = $mainslider.data('flickity');
+  
+  var $galleryNav = $('.flickity-page-dots');
+  var $galleryNavItems = $galleryNav.find('.flickity-page-dots .dot');
+  
+  $mainslider.on( 'select.flickity', function() {
+    $galleryNav.find('.is-selected').removeClass('is-selected');
+    $galleryNavItems.eq( flickity.selectedIndex ).addClass('is-selected');
+  });
+});
+</script>
 <script src="../assets/js/main.js"></script>
+
 </body>
 </html>

@@ -2,6 +2,10 @@
 @import 'abstracts/mixins';
 
 
+//bootstrap
+@import 'vendors/scss/bootstrap-grid';
+
+
 // @import 'base/icon-fonts';
 @import 'base/font';
 @import 'base/reset';
@@ -21,6 +25,14 @@
 @import 'layout/faq';
 
 @import 'layout/registration';
+
+@import 'layout/about';
+
+@import 'layout/myAccount';
+
+@import 'layout/forgotPassword';
+
+@import 'layout/tarrifs';
 
 
 

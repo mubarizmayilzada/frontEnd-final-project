@@ -1,3 +1,4 @@
+
 .calculator{
     &__content{
         padding: 64px 105px 48px;
@@ -6,6 +7,7 @@
         border-radius: 8px;
 
         &__heading{
+            
             text-align: center;
             margin: 0px 0px 48px;
             &__title{
@@ -92,6 +94,7 @@
                 height: 56px;
                 margin-bottom: 32px;
                 .range-content{
+                  
                     display: flex;
                     width: 460px;
                     height: 56px;

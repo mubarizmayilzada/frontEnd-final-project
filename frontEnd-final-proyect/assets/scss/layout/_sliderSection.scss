@@ -1,3 +1,19 @@
+.flickity-page-dots {
+    margin-top: 15px !important;
+    .dot{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: $base-color !important;
+}
+}
+
+.flickity-page-dots .dot.is-selected{
+    width: 30px !important;
+    border-radius: 8px;
+    background-color: $base-color;
+}
+
 .main-section-slider{
     background-color: $background-color;
     margin: 40px 0px 42px;
@@ -8,10 +24,13 @@
         background-color: $container-color;
         border-radius: 8px;
         position: relative;
+        background-image: url(https://velocity.az/front/img/vector/Vector-slider.svg);
+        background-repeat: no-repeat;
+        background-position: 0px 50px;
 
         &__slider-container{
             width: 100%;
-            height: 100%;
+            height: 560px;
             position: absolute;
             top: 0px;
             z-index: 2;
