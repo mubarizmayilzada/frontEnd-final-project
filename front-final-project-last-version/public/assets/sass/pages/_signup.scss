@@ -1,0 +1,34 @@
+.signup{
+    padding: 2.4rem;
+    display: flex;
+    background-color: $black-dark-mode-v2;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+}
+
+
+@media (max-width: 991.98px) {
+    .signup{
+        flex-direction: column;
+      }
+}
+@media (max-width: 767.98px) { 
+    .order__item-1{
+        order: 1;
+    }
+    .order__item-2{
+        order: 2;
+    }
+    .order__item-3{
+        order: 3;
+    }
+    .order__item-4{
+        order: 5;
+    }
+    .order__item-5{
+        order: 4;
+    }
+  
+}
+
+

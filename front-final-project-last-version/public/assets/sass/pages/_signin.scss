@@ -1,0 +1,12 @@
+.signin{
+    &__forgot{
+        @include flexbox;
+        color: white;
+        margin-top: 3rem;
+    }
+}
+#forgot-password:hover{
+    color: #c7c2f9cc;
+}
+
+

@@ -1,0 +1,98 @@
+.slider{
+    margin-top: 4rem;
+    margin-bottom: 8.8rem;
+}
+.work{
+  margin-bottom: 8.8rem;
+  &__wrapper{
+    background-color: transparent;
+    display: flex;
+    gap: 2.4rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+  }
+  &__box{
+    width: 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+}
+
+.tariffs{
+  margin-bottom: 8.8rem;
+  padding: 4.8rem 4.8rem 8.8rem;
+  background-color: $black-dark-mode-v2;
+  border-radius: $border-radius;
+  box-shadow:$shadow;
+  
+}
+
+.shops{
+  margin-bottom: 8.8rem;
+  &__btn--large{
+    display: none;
+  }
+}
+
+.news{
+  margin-bottom: 8.8rem;
+  padding: 6.4rem;
+  background-image: url("../icons/Vector-news.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: $black-dark-mode-v2;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  &__main{
+    max-width: 36rem;
+    width: 36rem;
+  }
+  &__inner{
+    display: flex;
+  }
+  &__cards{
+    margin-left: 4rem;
+  }
+}
+
+
+
+
+@media (max-width: 991.98px) { 
+  .news__inner{
+    flex-direction: column;
+  }
+  .news__main{
+    white-space: nowrap;
+    &__btn{
+      display: none;
+    }
+  }
+  .news__cards{
+    margin-left: 0;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling:touch;
+  }
+}
+
+@media (max-width: 767.98px) { 
+  .slider{
+    margin-top: 0%;
+  }
+  .shops__btn--large{
+    display: flex;
+  }
+  .shops__btn--little{
+    display: none;
+  }
+  .shops .heading--btwn{
+    margin-bottom: 0.8rem;
+  }
+
+}
+

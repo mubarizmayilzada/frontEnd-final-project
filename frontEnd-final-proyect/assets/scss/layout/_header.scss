@@ -1,3 +1,5 @@
+
+
 .header {
     background-color: $background-color;
     &__common-div {
@@ -284,3 +286,19 @@
         margin-top: -270px;
     }
 }
+
+
+@media screen and (max-width:   1200px) {
+    body {
+      background-color: lightgreen;
+      nav{
+          font-size: 12px !important;
+          ul{
+              a{
+
+                  font-size: 12px !important;
+                }
+          }
+      }
+    }
+  }

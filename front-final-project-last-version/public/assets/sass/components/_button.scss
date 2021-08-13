@@ -1,0 +1,117 @@
+.btn{
+    @include flexbox;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1.6rem;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    color: $black;
+    font-weight: 500;
+    min-width: 144px;
+    padding: 1.6rem 3.2rem;
+    border-radius: $border-radius;
+    &--transparent{
+        padding: 1.4rem 0;
+        border: 2px solid $black;
+        border-radius: $border-radius;
+        width: 100% ;
+        font-weight: 500;
+        &:hover{
+            background-color: rgba($white,0.11);
+            color: $black;
+        }
+    }
+    &--primary-light{
+        background-color: $brand-color-light;
+        &:hover{
+            background-color: #c7c2f9cc;
+            color: $black;
+        }
+        &--little{
+            display: inline-block;
+            text-align: center;
+            min-width: 20rem;
+        }
+        &--bigger{
+            margin: 5.6rem auto 0;
+            min-width: 32rem;
+        }
+        &--large{
+            width: 100%;
+            text-align: center;
+        }
+        
+    }
+    &--registration{
+        width: 44.9rem;
+    }
+    &--primary-dark{
+        width: 20rem;
+        background-color: transparent;
+        color: $brand-color-light;
+        border-color: $line-color;
+        &:hover{
+            background-color: $brand-color-light;
+            color: $black;
+        }
+        &--hover{
+            &:hover{
+                background-color: $line-color;
+                color: $brand-color-light;
+                border:1px solid $brand-color-light;
+            }
+        }
+        &--large{
+            text-align: center;
+            width: 100%;
+        }
+       
+    }
+    &--menu{
+        min-width: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        padding: 15px 11px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        border: 1px solid rgba(255,255,255,0.5);
+        &:hover{
+            background-color: #3B4046;
+            color: #c7c2f9;
+            border: 1px solid transparent;
+        }
+    }
+    &--header{
+        padding: 0.8rem 1rem;
+        margin-left: 21px;
+    }
+    
+    
+}
+
+
+@media (max-width: 991.98px) { 
+    .btn--primary-light--large{
+        width: 83%;
+      }
+      .btn--registration{
+        width: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .btn--primary-light--large{
+        width: 80%;
+      }
+      .btn--registration{
+        margin-bottom: 3.2rem;
+    }
+
+}

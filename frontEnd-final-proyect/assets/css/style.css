@@ -3152,6 +3152,14 @@ a {
   100% {
     margin-top: -270px; } }
 
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: lightgreen; }
+    body nav {
+      font-size: 12px !important; }
+      body nav ul a {
+        font-size: 12px !important; } }
+
 .flickity-page-dots {
   margin-top: 15px !important; }
   .flickity-page-dots .dot {
@@ -3255,7 +3263,6 @@ a {
     color: #aaa6e2ab;
     margin: 0px 0px 8px; }
   .calculator__content__calculator-details .calculator-details-left {
-    width: 492px;
     height: 128px;
     padding: 0px 16px; }
   .calculator__content__calculator-details .calculator-details-right {

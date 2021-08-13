@@ -1,0 +1,42 @@
+.aside{
+    @include flexbox;
+    padding: 0 4.8rem;
+    height: 83.4rem;
+    width: 32.8rem;
+    flex-direction: column;
+    background-color: $brand-color-light;
+    border-radius: 8px;
+    background-image: url("../icons/Vector-lighten.svg");
+    background-repeat: no-repeat;
+    &--login{
+        height: auto;
+        padding: 0 6.4rem;
+        width: 49.7rem;
+    }
+}
+
+
+
+@media (max-width: 1199.98px) { 
+    .aside--login{
+        width: 328px;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .aside--login{
+        padding: 3.2rem !important;
+        background-image: none;
+        margin-right: 0 !important;
+        margin-top: 6.4rem;
+        width: 100% !important;
+    }
+    .aside{
+        width: 100%;
+        height:auto;
+        padding: 3.2rem;
+        background-image: none;
+        margin-top: 6.4rem;
+      }
+}
